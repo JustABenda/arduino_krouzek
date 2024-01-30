@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<flowchartSaveContainer>
+    <flowchart>
+        <mainSegment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="layoutSegment" xmlID="0">
+            <element xsi:type="layoutElement" xmlID="1" parentSegment="0">
+                <startEnd>
+                    <borderColor>0,0,0,255</borderColor>
+                    <shapeUpColor>255,255,255,255</shapeUpColor>
+                    <shapeDownColor>230,230,230,255</shapeDownColor>
+                    <hasShadow>true</hasShadow>
+                    <commandsValid>true</commandsValid>
+                    <value>Začátek</value>
+                </startEnd>
+            </element>
+            <element xsi:type="layoutElement" xmlID="3" parentSegment="0">
+                <process>
+                    <borderColor>0,0,0,255</borderColor>
+                    <shapeUpColor>255,255,255,255</shapeUpColor>
+                    <shapeDownColor>230,230,230,255</shapeDownColor>
+                    <hasShadow>true</hasShadow>
+                    <customValue>Inicializuj pin LED</customValue>
+                    <commandsValid>true</commandsValid>
+                    <value>Inicializuj pin LED</value>
+                </process>
+            </element>
+            <element xsi:type="layoutElement" xmlID="11" parentSegment="0">
+                <io>
+                    <borderColor>0,0,0,255</borderColor>
+                    <shapeUpColor>255,255,255,255</shapeUpColor>
+                    <shapeDownColor>230,230,230,255</shapeDownColor>
+                    <hasShadow>true</hasShadow>
+                    <customValue>Vypni LED</customValue>
+                    <commands>
+                        <entry key="var"></entry>
+                    </commands>
+                    <commandsValid>true</commandsValid>
+                    <value>Vypni LED</value>
+                </io>
+            </element>
+            <element xsi:type="layoutElement" xmlID="5" parentSegment="0">
+                <loopStart>
+                    <borderColor>0,0,0,255</borderColor>
+                    <shapeUpColor>255,255,255,255</shapeUpColor>
+                    <shapeDownColor>230,230,230,255</shapeDownColor>
+                    <hasShadow>true</hasShadow>
+                    <customValue>Opakuj stále</customValue>
+                    <commandsValid>true</commandsValid>
+                    <value>Opakuj stále</value>
+                    <overHanged>true</overHanged>
+                </loopStart>
+                <segment xsi:nil="true"/>
+                <segment xsi:type="layoutSegment" xmlID="6" parentElement="5">
+                    <element xsi:type="layoutElement" xmlID="7" parentSegment="6">
+                        <io>
+                            <borderColor>0,0,0,255</borderColor>
+                            <shapeUpColor>255,255,255,255</shapeUpColor>
+                            <shapeDownColor>230,230,230,255</shapeDownColor>
+                            <hasShadow>true</hasShadow>
+                            <customValue>Zapni LED
+</customValue>
+                            <commandsValid>true</commandsValid>
+                            <value>Zapni LED
+</value>
+                        </io>
+                    </element>
+                    <element xsi:type="layoutElement" xmlID="8" parentSegment="6">
+                        <process>
+                            <borderColor>0,0,0,255</borderColor>
+                            <shapeUpColor>255,255,255,255</shapeUpColor>
+                            <shapeDownColor>230,230,230,255</shapeDownColor>
+                            <hasShadow>true</hasShadow>
+                            <customValue>Čekej 500ms
+</customValue>
+                            <commandsValid>true</commandsValid>
+                            <value>Čekej 500ms
+</value>
+                        </process>
+                    </element>
+                    <element xsi:type="layoutElement" xmlID="9" parentSegment="6">
+                        <io>
+                            <borderColor>0,0,0,255</borderColor>
+                            <shapeUpColor>255,255,255,255</shapeUpColor>
+                            <shapeDownColor>230,230,230,255</shapeDownColor>
+                            <hasShadow>true</hasShadow>
+                            <customValue>Vypni LED</customValue>
+                            <commandsValid>true</commandsValid>
+                            <value>Vypni LED</value>
+                        </io>
+                    </element>
+                    <element xsi:type="layoutElement" xmlID="10" parentSegment="6">
+                        <process>
+                            <borderColor>0,0,0,255</borderColor>
+                            <shapeUpColor>255,255,255,255</shapeUpColor>
+                            <shapeDownColor>230,230,230,255</shapeDownColor>
+                            <hasShadow>true</hasShadow>
+                            <customValue>Čekej 500ms</customValue>
+                            <commandsValid>true</commandsValid>
+                            <value>Čekej 500ms</value>
+                        </process>
+                    </element>
+                </segment>
+            </element>
+            <element xsi:type="layoutElement" xmlID="4" parentSegment="0">
+                <loopEnd>
+                    <borderColor>0,0,0,255</borderColor>
+                    <shapeUpColor>255,255,255,255</shapeUpColor>
+                    <shapeDownColor>230,230,230,255</shapeDownColor>
+                    <hasShadow>true</hasShadow>
+                    <commandsValid>true</commandsValid>
+                    <value></value>
+                </loopEnd>
+            </element>
+            <element xsi:type="layoutElement" xmlID="2" parentSegment="0">
+                <startEnd>
+                    <borderColor>0,0,0,255</borderColor>
+                    <shapeUpColor>255,255,255,255</shapeUpColor>
+                    <shapeDownColor>230,230,230,255</shapeDownColor>
+                    <hasShadow>true</hasShadow>
+                    <commandsValid>true</commandsValid>
+                    <value>Konec</value>
+                </startEnd>
+            </element>
+        </mainSegment>
+    </flowchart>
+</flowchartSaveContainer>

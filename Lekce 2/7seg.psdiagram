@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<flowchartSaveContainer>
+    <flowchart>
+        <mainSegment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="layoutSegment" xmlID="0">
+            <element xsi:type="layoutElement" xmlID="1" parentSegment="0">
+                <startEnd>
+                    <borderColor>0,0,0,255</borderColor>
+                    <shapeUpColor>255,255,255,255</shapeUpColor>
+                    <shapeDownColor>230,230,230,255</shapeDownColor>
+                    <hasShadow>true</hasShadow>
+                    <commandsValid>true</commandsValid>
+                    <value>Začátek</value>
+                </startEnd>
+            </element>
+            <element xsi:type="layoutElement" xmlID="6" parentSegment="0">
+                <comment>
+                    <borderColor>0,0,0,255</borderColor>
+                    <shapeDownColor>230,230,230,255</shapeDownColor>
+                    <hasShadow>true</hasShadow>
+                    <customValue>Zde bude 7 pinů a,b,c,d,e,f,g</customValue>
+                    <commandsValid>true</commandsValid>
+                    <value>Zde bude 7 pinů a,b,c,d,e,f,g</value>
+                    <alwaysLeftAlign>false</alwaysLeftAlign>
+                    <relativeX>178.0</relativeX>
+                    <relativeY>-10.0</relativeY>
+                    <paired>true</paired>
+                </comment>
+            </element>
+            <element xsi:type="layoutElement" xmlID="3" parentSegment="0">
+                <process>
+                    <borderColor>0,0,0,255</borderColor>
+                    <shapeUpColor>255,255,255,255</shapeUpColor>
+                    <shapeDownColor>230,230,230,255</shapeDownColor>
+                    <hasShadow>true</hasShadow>
+                    <customValue>Inicializuj připojené led na pinech</customValue>
+                    <commandsValid>true</commandsValid>
+                    <value>Inicializuj připojené led na pinech</value>
+                </process>
+            </element>
+            <element xsi:type="layoutElement" xmlID="4" parentSegment="0">
+                <process>
+                    <borderColor>0,0,0,255</borderColor>
+                    <shapeUpColor>255,255,255,255</shapeUpColor>
+                    <shapeDownColor>230,230,230,255</shapeDownColor>
+                    <hasShadow>true</hasShadow>
+                    <customValue>Ulož cislo = 0</customValue>
+                    <defaultValue>cislo ← 0</defaultValue>
+                    <commands>
+                        <entry key="var">cislo</entry>
+                        <entry key="value">0</entry>
+                    </commands>
+                    <commandsValid>true</commandsValid>
+                    <value>Ulož cislo = 0</value>
+                </process>
+            </element>
+            <element xsi:type="layoutElement" xmlID="8" parentSegment="0">
+                <loopStart>
+                    <borderColor>0,0,0,255</borderColor>
+                    <shapeUpColor>255,255,255,255</shapeUpColor>
+                    <shapeDownColor>230,230,230,255</shapeDownColor>
+                    <hasShadow>true</hasShadow>
+                    <customValue>Opakuj stále</customValue>
+                    <commandsValid>true</commandsValid>
+                    <value>Opakuj stále</value>
+                    <overHanged>true</overHanged>
+                </loopStart>
+                <segment xsi:nil="true"/>
+                <segment xsi:type="layoutSegment" xmlID="9" parentElement="8">
+                    <element xsi:type="layoutElement" xmlID="5" parentSegment="9">
+                        <io>
+                            <borderColor>0,0,0,255</borderColor>
+                            <shapeUpColor>255,255,255,255</shapeUpColor>
+                            <shapeDownColor>230,230,230,255</shapeDownColor>
+                            <hasShadow>true</hasShadow>
+                            <customValue>Načti číslo do cislo
+tj. přidej do cislo hodnotu 1</customValue>
+                            <commandsValid>true</commandsValid>
+                            <value>Načti číslo do cislo
+tj. přidej do cislo hodnotu 1</value>
+                        </io>
+                    </element>
+                    <element xsi:type="layoutElement" xmlID="34" parentSegment="9">
+                        <decision>
+                            <borderColor>0,0,0,255</borderColor>
+                            <shapeUpColor>255,255,255,255</shapeUpColor>
+                            <shapeDownColor>230,230,230,255</shapeDownColor>
+                            <hasShadow>true</hasShadow>
+                            <customValue>Je číslo v cislo větší než 9</customValue>
+                            <commandsValid>true</commandsValid>
+                            <value>Je číslo v cislo větší než 9</value>
+                        </decision>
+                        <segment xsi:type="layoutSegment" xmlID="35" parentElement="34">
+                            <description>Ne</description>
+                        </segment>
+                        <segment xsi:type="layoutSegment" xmlID="36" parentElement="34">
+                            <element xsi:type="layoutElement" xmlID="37" parentSegment="36">
+<process>
+    <borderColor>0,0,0,255</borderColor>
+    <shapeUpColor>255,255,255,255</shapeUpColor>
+    <shapeDownColor>230,230,230,255</shapeDownColor>
+    <hasShadow>true</hasShadow>
+    <customValue>Ulož cislo = 0</customValue>
+    <commandsValid>true</commandsValid>
+    <value>Ulož cislo = 0</value>
+</process>
+                            </element>
+                            <description>Ano</description>
+                        </segment>
+                    </element>
+                    <element xsi:type="layoutElement" xmlID="22" parentSegment="9">
+                        <io>
+                            <borderColor>0,0,0,255</borderColor>
+                            <shapeUpColor>255,255,255,255</shapeUpColor>
+                            <shapeDownColor>230,230,230,255</shapeDownColor>
+                            <hasShadow>true</hasShadow>
+                            <customValue>Vypni a,b,c,d,e,f</customValue>
+                            <commandsValid>true</commandsValid>
+                            <value>Vypni a,b,c,d,e,f</value>
+                        </io>
+                    </element>
+                    <element xsi:type="layoutElement" xmlID="10" parentSegment="9">
+                        <switch>
+                            <borderColor>0,0,0,255</borderColor>
+                            <shapeUpColor>255,255,255,255</shapeUpColor>
+                            <shapeDownColor>230,230,230,255</shapeDownColor>
+                            <hasShadow>true</hasShadow>
+                            <customValue>Je cislo</customValue>
+                            <commandsValid>true</commandsValid>
+                            <value>Je cislo</value>
+                        </switch>
+                        <segment xsi:type="layoutSegment" xmlID="11" parentElement="10">
+                            <description>Jinak</description>
+                        </segment>
+                        <segment xsi:type="layoutSegment" xmlID="12" parentElement="10">
+                            <element xsi:type="layoutElement" xmlID="23" parentSegment="12">
+<io>
+    <borderColor>0,0,0,255</borderColor>
+    <shapeUpColor>255,255,255,255</shapeUpColor>
+    <shapeDownColor>230,230,230,255</shapeDownColor>
+    <hasShadow>true</hasShadow>
+    <customValue>Zapni b,c</customValue>
+    <commandsValid>true</commandsValid>
+    <value>Zapni b,c</value>
+</io>
+                            </element>
+                            <customDescription>1</customDescription>
+                            <description>1</description>
+                        </segment>
+                        <segment xsi:type="layoutSegment" xmlID="13" parentElement="10">
+                            <element xsi:type="layoutElement" xmlID="24" parentSegment="13">
+<io>
+    <borderColor>0,0,0,255</borderColor>
+    <shapeUpColor>255,255,255,255</shapeUpColor>
+    <shapeDownColor>230,230,230,255</shapeDownColor>
+    <hasShadow>true</hasShadow>
+    <customValue>Zapni a,b,g,e,d</customValue>
+    <commandsValid>true</commandsValid>
+    <value>Zapni a,b,g,e,d</value>
+</io>
+                            </element>
+                            <customDescription>2</customDescription>
+                            <description>2</description>
+                        </segment>
+                        <segment xsi:type="layoutSegment" xmlID="14" parentElement="10">
+                            <element xsi:type="layoutElement" xmlID="25" parentSegment="14">
+<io>
+    <borderColor>0,0,0,255</borderColor>
+    <shapeUpColor>255,255,255,255</shapeUpColor>
+    <shapeDownColor>230,230,230,255</shapeDownColor>
+    <hasShadow>true</hasShadow>
+    <customValue>Zapni a,b,g,c,d</customValue>
+    <commandsValid>true</commandsValid>
+    <value>Zapni a,b,g,c,d</value>
+</io>
+                            </element>
+                            <customDescription>3</customDescription>
+                            <description>3</description>
+                        </segment>
+                        <segment xsi:type="layoutSegment" xmlID="15" parentElement="10">
+                            <element xsi:type="layoutElement" xmlID="26" parentSegment="15">
+<io>
+    <borderColor>0,0,0,255</borderColor>
+    <shapeUpColor>255,255,255,255</shapeUpColor>
+    <shapeDownColor>230,230,230,255</shapeDownColor>
+    <hasShadow>true</hasShadow>
+    <customValue>Zapni f,g,b,c</customValue>
+    <commandsValid>true</commandsValid>
+    <value>Zapni f,g,b,c</value>
+</io>
+                            </element>
+                            <customDescription>4</customDescription>
+                            <description>4</description>
+                        </segment>
+                        <segment xsi:type="layoutSegment" xmlID="16" parentElement="10">
+                            <element xsi:type="layoutElement" xmlID="27" parentSegment="16">
+<io>
+    <borderColor>0,0,0,255</borderColor>
+    <shapeUpColor>255,255,255,255</shapeUpColor>
+    <shapeDownColor>230,230,230,255</shapeDownColor>
+    <hasShadow>true</hasShadow>
+    <customValue>Zapni a,f,g,c,d</customValue>
+    <commandsValid>true</commandsValid>
+    <value>Zapni a,f,g,c,d</value>
+</io>
+                            </element>
+                            <customDescription>5</customDescription>
+                            <description>5</description>
+                        </segment>
+                        <segment xsi:type="layoutSegment" xmlID="17" parentElement="10">
+                            <element xsi:type="layoutElement" xmlID="28" parentSegment="17">
+<io>
+    <borderColor>0,0,0,255</borderColor>
+    <shapeUpColor>255,255,255,255</shapeUpColor>
+    <shapeDownColor>230,230,230,255</shapeDownColor>
+    <hasShadow>true</hasShadow>
+    <customValue>Zapni a,f,g,c,e,d</customValue>
+    <commandsValid>true</commandsValid>
+    <value>Zapni a,f,g,c,e,d</value>
+</io>
+                            </element>
+                            <customDescription>6</customDescription>
+                            <description>6</description>
+                        </segment>
+                        <segment xsi:type="layoutSegment" xmlID="18" parentElement="10">
+                            <element xsi:type="layoutElement" xmlID="29" parentSegment="18">
+<io>
+    <borderColor>0,0,0,255</borderColor>
+    <shapeUpColor>255,255,255,255</shapeUpColor>
+    <shapeDownColor>230,230,230,255</shapeDownColor>
+    <hasShadow>true</hasShadow>
+    <customValue>Zapni a,b,c</customValue>
+    <commandsValid>true</commandsValid>
+    <value>Zapni a,b,c</value>
+</io>
+                            </element>
+                            <customDescription>7</customDescription>
+                            <description>7</description>
+                        </segment>
+                        <segment xsi:type="layoutSegment" xmlID="19" parentElement="10">
+                            <element xsi:type="layoutElement" xmlID="30" parentSegment="19">
+<io>
+    <borderColor>0,0,0,255</borderColor>
+    <shapeUpColor>255,255,255,255</shapeUpColor>
+    <shapeDownColor>230,230,230,255</shapeDownColor>
+    <hasShadow>true</hasShadow>
+    <customValue>Zapni a,b,c,d,e,f,g</customValue>
+    <commandsValid>true</commandsValid>
+    <value>Zapni a,b,c,d,e,f,g</value>
+</io>
+                            </element>
+                            <customDescription>8</customDescription>
+                            <description>8</description>
+                        </segment>
+                        <segment xsi:type="layoutSegment" xmlID="20" parentElement="10">
+                            <element xsi:type="layoutElement" xmlID="31" parentSegment="20">
+<io>
+    <borderColor>0,0,0,255</borderColor>
+    <shapeUpColor>255,255,255,255</shapeUpColor>
+    <shapeDownColor>230,230,230,255</shapeDownColor>
+    <hasShadow>true</hasShadow>
+    <customValue>Zapni a,b,c,d,f,g</customValue>
+    <commandsValid>true</commandsValid>
+    <value>Zapni a,b,c,d,f,g</value>
+</io>
+                            </element>
+                            <customDescription>9</customDescription>
+                            <description>9</description>
+                        </segment>
+                        <segment xsi:type="layoutSegment" xmlID="21" parentElement="10">
+                            <element xsi:type="layoutElement" xmlID="32" parentSegment="21">
+<io>
+    <borderColor>0,0,0,255</borderColor>
+    <shapeUpColor>255,255,255,255</shapeUpColor>
+    <shapeDownColor>230,230,230,255</shapeDownColor>
+    <hasShadow>true</hasShadow>
+    <customValue>Zapni a,b,c,d,e,f</customValue>
+    <commandsValid>true</commandsValid>
+    <value>Zapni a,b,c,d,e,f</value>
+</io>
+                            </element>
+                            <customDescription>0</customDescription>
+                            <description>0</description>
+                        </segment>
+                    </element>
+                    <element xsi:type="layoutElement" xmlID="33" parentSegment="9">
+                        <process>
+                            <borderColor>0,0,0,255</borderColor>
+                            <shapeUpColor>255,255,255,255</shapeUpColor>
+                            <shapeDownColor>230,230,230,255</shapeDownColor>
+                            <hasShadow>true</hasShadow>
+                            <customValue>Čekej 500ms</customValue>
+                            <commandsValid>true</commandsValid>
+                            <value>Čekej 500ms</value>
+                        </process>
+                    </element>
+                </segment>
+            </element>
+            <element xsi:type="layoutElement" xmlID="7" parentSegment="0">
+                <loopEnd>
+                    <borderColor>0,0,0,255</borderColor>
+                    <shapeUpColor>255,255,255,255</shapeUpColor>
+                    <shapeDownColor>230,230,230,255</shapeDownColor>
+                    <hasShadow>true</hasShadow>
+                    <commandsValid>true</commandsValid>
+                    <value></value>
+                </loopEnd>
+            </element>
+            <element xsi:type="layoutElement" xmlID="2" parentSegment="0">
+                <startEnd>
+                    <borderColor>0,0,0,255</borderColor>
+                    <shapeUpColor>255,255,255,255</shapeUpColor>
+                    <shapeDownColor>230,230,230,255</shapeDownColor>
+                    <hasShadow>true</hasShadow>
+                    <commandsValid>true</commandsValid>
+                    <value>Konec</value>
+                </startEnd>
+            </element>
+        </mainSegment>
+    </flowchart>
+</flowchartSaveContainer>
