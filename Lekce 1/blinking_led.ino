@@ -1,3 +1,5 @@
+#include <Arduino.h>
+
 #define LED_PIN 4 //Vytvoření přezdívky pro číslo pinu na kterém je LED
 
 void setup() { //Kód, který probíhá jednou na začátku, tj. při zapnutí nebo restartování Arduina
