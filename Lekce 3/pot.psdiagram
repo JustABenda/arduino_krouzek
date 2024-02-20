@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<flowchartSaveContainer>
+    <flowchart>
+        <mainSegment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="layoutSegment" xmlID="0">
+            <element xsi:type="layoutElement" xmlID="1" parentSegment="0">
+                <startEnd>
+                    <borderColor>0,0,0,255</borderColor>
+                    <shapeUpColor>255,255,255,255</shapeUpColor>
+                    <shapeDownColor>230,230,230,255</shapeDownColor>
+                    <hasShadow>true</hasShadow>
+                    <commandsValid>true</commandsValid>
+                    <value>Začátek</value>
+                </startEnd>
+            </element>
+            <element xsi:type="layoutElement" xmlID="3" parentSegment="0">
+                <process>
+                    <borderColor>0,0,0,255</borderColor>
+                    <shapeUpColor>255,255,255,255</shapeUpColor>
+                    <shapeDownColor>230,230,230,255</shapeDownColor>
+                    <hasShadow>true</hasShadow>
+                    <customValue>Inicializuj sériovou linku s rychlostí 9600</customValue>
+                    <commandsValid>true</commandsValid>
+                    <value>Inicializuj sériovou linku s rychlostí 9600</value>
+                </process>
+            </element>
+            <element xsi:type="layoutElement" xmlID="5" parentSegment="0">
+                <loopStart>
+                    <borderColor>0,0,0,255</borderColor>
+                    <shapeUpColor>255,255,255,255</shapeUpColor>
+                    <shapeDownColor>230,230,230,255</shapeDownColor>
+                    <hasShadow>true</hasShadow>
+                    <customValue>Opakuj stále</customValue>
+                    <commandsValid>true</commandsValid>
+                    <value>Opakuj stále</value>
+                    <overHanged>true</overHanged>
+                </loopStart>
+                <segment xsi:nil="true"/>
+                <segment xsi:type="layoutSegment" xmlID="6" parentElement="5">
+                    <element xsi:type="layoutElement" xmlID="7" parentSegment="6">
+                        <io>
+                            <borderColor>0,0,0,255</borderColor>
+                            <shapeUpColor>255,255,255,255</shapeUpColor>
+                            <shapeDownColor>230,230,230,255</shapeDownColor>
+                            <hasShadow>true</hasShadow>
+                            <customValue>Načti analogovou hodnutu z potenciometru</customValue>
+                            <commandsValid>true</commandsValid>
+                            <value>Načti analogovou hodnutu z potenciometru</value>
+                        </io>
+                    </element>
+                    <element xsi:type="layoutElement" xmlID="8" parentSegment="6">
+                        <process>
+                            <borderColor>0,0,0,255</borderColor>
+                            <shapeUpColor>255,255,255,255</shapeUpColor>
+                            <shapeDownColor>230,230,230,255</shapeDownColor>
+                            <hasShadow>true</hasShadow>
+                            <customValue>Uprav hodnotu do rozmezí 0-9
+vzorec: [0-9] = hodnota/1023*9</customValue>
+                            <commandsValid>true</commandsValid>
+                            <value>Uprav hodnotu do rozmezí 0-9
+vzorec: [0-9] = hodnota/1023*9</value>
+                        </process>
+                    </element>
+                    <element xsi:type="layoutElement" xmlID="9" parentSegment="6">
+                        <io>
+                            <borderColor>0,0,0,255</borderColor>
+                            <shapeUpColor>255,255,255,255</shapeUpColor>
+                            <shapeDownColor>230,230,230,255</shapeDownColor>
+                            <hasShadow>true</hasShadow>
+                            <customValue>Vypiš obě hodnoty</customValue>
+                            <commandsValid>true</commandsValid>
+                            <value>Vypiš obě hodnoty</value>
+                        </io>
+                    </element>
+                    <element xsi:type="layoutElement" xmlID="10" parentSegment="6">
+                        <process>
+                            <borderColor>0,0,0,255</borderColor>
+                            <shapeUpColor>255,255,255,255</shapeUpColor>
+                            <shapeDownColor>230,230,230,255</shapeDownColor>
+                            <hasShadow>true</hasShadow>
+                            <customValue>čekej 100mls</customValue>
+                            <commandsValid>true</commandsValid>
+                            <value>čekej 100mls</value>
+                        </process>
+                    </element>
+                </segment>
+            </element>
+            <element xsi:type="layoutElement" xmlID="4" parentSegment="0">
+                <loopEnd>
+                    <borderColor>0,0,0,255</borderColor>
+                    <shapeUpColor>255,255,255,255</shapeUpColor>
+                    <shapeDownColor>230,230,230,255</shapeDownColor>
+                    <hasShadow>true</hasShadow>
+                    <commandsValid>true</commandsValid>
+                    <value></value>
+                </loopEnd>
+            </element>
+            <element xsi:type="layoutElement" xmlID="2" parentSegment="0">
+                <startEnd>
+                    <borderColor>0,0,0,255</borderColor>
+                    <shapeUpColor>255,255,255,255</shapeUpColor>
+                    <shapeDownColor>230,230,230,255</shapeDownColor>
+                    <hasShadow>true</hasShadow>
+                    <commandsValid>true</commandsValid>
+                    <value>Konec</value>
+                </startEnd>
+            </element>
+        </mainSegment>
+    </flowchart>
+</flowchartSaveContainer>
