@@ -13,6 +13,7 @@ Obdobnou věc můžete udělat s tlačítkem, místo analogRead(rozsah 0-1023) v
 Zapojení:
 
 ![alt text](https://github.com/JustABenda/arduino_krouzek/blob/main/Lekce%203/pot_zapojeni.png)
+![alt text](https://github.com/JustABenda/arduino_krouzek/blob/main/Lekce%203/btn.png)
 
 Diagram:
 
